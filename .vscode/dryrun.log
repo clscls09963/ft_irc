@@ -1,0 +1,11 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/igayeong/Desktop/ft_irc'
+c++ -Wall -Wextra -Werror -std=c++98 -Iinclude/ -c src/main.cpp -o src/main.o
+c++ -Wall -Wextra -Werror -std=c++98 -Iinclude/ -c src/Channel.cpp -o src/Channel.o
+c++ -Wall -Wextra -Werror -std=c++98 -Iinclude/ -c src/Client.cpp -o src/Client.o
+c++ -Wall -Wextra -Werror -std=c++98 -Iinclude/ -c src/Server.cpp -o src/Server.o
+c++ -Wall -Wextra -Werror -std=c++98 -Iinclude/ -c src/Command.cpp -o src/Command.o
+c++ -Wall -Wextra -Werror -std=c++98 -Iinclude/ -c src/Util.cpp -o src/Util.o
+c++ -Wall -Wextra -Werror -std=c++98 -Iinclude/ src/main.o src/Channel.o src/Client.o src/Server.o src/Command.o src/Util.o -o ircserv
+make: Leaving directory `/Users/igayeong/Desktop/ft_irc'
+ 
